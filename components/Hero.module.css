@@ -1,0 +1,112 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9fafb;
+    padding: 6rem 1.5rem 2rem;
+}
+
+.heroContainer {
+    max-width: 800px;
+    text-align: center;
+}
+
+.greeting {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #4f46e5;
+    margin-bottom: 0.05em;
+}
+
+.heading {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #1f2937;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: #4f46e5;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+}
+
+.bio {
+    font-size: 1.1rem;
+    color: #6b7280;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.primaryButton {
+    background-color: #4f46e5;
+    color: #ffffff;
+    padding: 0.85rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, trasnform 0.2s ease;
+}
+
+.primaryButton:hover {
+    background-color: #4338ca;
+    transform: translateY(-2px);
+}
+
+.secondaryButton {
+    background-color: transparent;
+    color: #4f46e5;
+    padding: 0.85rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 2px solid #4f46e5;
+    cursor: pointer;
+    transition: background-color 0.2 ease, transform 0.2 ease;
+}
+
+.secondaryButton:hover {
+    background-color: #eef2ff;
+    transform: translateY(-2px);
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.socialLink {
+    color: #6b7280;
+    font-size: 1.75rem;
+    transition: color 0.2 ease, transform 0.2s ease;
+
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2.5rem;
+    }
+}
