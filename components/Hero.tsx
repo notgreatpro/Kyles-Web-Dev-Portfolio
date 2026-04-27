@@ -7,50 +7,54 @@ const Hero = () => {
       <div className={styles.heroContainer}>
 
         {/* Greeting */}
-        <p className={styles.greeting}>👋 Hello, I'm</p>
+        <p className={styles.greeting}>I'm</p>
 
         {/* Main Heading */}
         <h1 className={styles.heading}>
-          <span className={styles.highlight}>Your Name</span>
+          <span className={styles.highlight}>Kyle Arahan</span>
         </h1>
 
         {/* Subheading / Role */}
         <h2 className={styles.subheading}>
-          Full Stack Developer
+          Full Stack Web Developer
         </h2>
 
         {/* Short Bio */}
         <p className={styles.bio}>
-          I build clean, fast and user-friendly web applications.
-          Passionate about creating digital experiences that make
-          a difference.
+          testing
         </p>
 
         {/* CTA Buttons */}
         <div className={styles.buttonGroup}>
           <a href="#projects" className={styles.primaryButton}>
-            View My Work
+            View My Projects
           </a>
           <a href="#contact" className={styles.secondaryButton}>
             Contact Me
           </a>
         </div>
 
-        {/* Social Links */}
-        <div className={styles.socials}>
-          
-            href="https://github.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.socialLink}
-            <FaGithub />
-          
-            href="https://linkedin.com/in/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.socialLink}
-            <FaLinkedin />
-        </div>
+   
+            <div className={styles.socials}>
+
+            <a
+                href="https://github.com/notgreatpro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.socialLink}
+            >
+                <FaGithub />
+            </a>
+
+            <a
+                href="https://linkedin.com/in/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.socialLink}
+            >
+                <FaLinkedin />
+            </a>
+            </div>
       </div>
     </section>
   )
