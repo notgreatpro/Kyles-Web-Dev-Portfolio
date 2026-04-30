@@ -9,6 +9,7 @@ const navItems = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
+  {label: 'Education', href: '#education'},
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -20,7 +21,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20)
-      const sections = ['about', 'skills', 'projects', 'contact']
+      const sections = ['about', 'skills', 'projects', 'education', 'contact']
       const current = sections.find((id) => {
         const el = document.getElementById(id)
         if (!el) return false
