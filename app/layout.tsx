@@ -4,7 +4,7 @@ import ScrollProgress from '@/components/ScrollProgress'
 import CursorGlow from '@/components/CursorGlow'
 
 export const metadata: Metadata = {
-  title: 'Kyle Arahan Protfolio',
+  title: 'Kyle Arahans Portfolio',
   description:
     'My Portfolio — Full Stack Web Developer based in Winnipeg, Canada. Specializing in React, Next.js, React Native, Node.js and Supabase.',
   keywords: [
