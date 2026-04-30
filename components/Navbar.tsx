@@ -45,8 +45,13 @@ const Navbar = () => {
     <nav className={navClassName}>
       <div className={styles.navContainer}>
 
-        {/* Logo */}
+ 
         <a href="#hero" className={styles.logo}>
+        <img
+          src="/logo/YaeLogo.png.jpg"
+          alt="Kyle Arahan Logo"
+          className={styles.logoImage}
+        />
           Kyle Arahan<span>.</span>
         </a>
 

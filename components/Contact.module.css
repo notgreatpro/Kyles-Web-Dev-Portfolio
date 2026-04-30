@@ -1,133 +1,309 @@
 .contact {
-    padding: 6rem 1.5rem
+  padding: var(--section-padding);
+  background-color: var(--color-bg-white);
 }
 
 .contactContainer {
-    max-width: 700px;
-    margin: auto;
-    text-align: center;
+  max-width: var(--container-width);
+  margin: 0 auto;
 }
 
-.sectionTitle {
-    font-size: 2rem;
-    font-weight: 800;
-    color: #1f2937;
-    margin-bottom: 0.5rem;
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
-.sectionTitle span {
-    color: #4f46e5;
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  background-color: var(--color-primary-light);
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius-pill);
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--color-text-dark);
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.title span {
+  color: var(--color-primary);
+}
+
+.accent {
+  width: 50px;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    #818cf8
+  );
+  border-radius: var(--radius-pill);
+  margin: 0 auto 1rem;
 }
 
 .subtitle {
-    font-size: 1rem;
-    color: #6b7280;
-    margin-bottom: 3rem;
-    line-height: 1.7;
+  font-size: 1rem;
+  color: var(--color-text-light);
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.7;
 }
 
-.contactCards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4rem;
+  align-items: start;
 }
+
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.infoTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 0.25rem;
+}
+
+.infoText {
+  font-size: 0.95rem;
+  color: var(--color-text-mid);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
 
 .contactCard {
-    background-color: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 1.5rem 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    text-decoration: none;
-    min-width: 160px;
-    transition: transform 0.2 ease, box-shadow 0.2s ease, border-color 0.2 ease;
-
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  background-color: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  text-decoration: none;
+  transition: transform var(--transition),
+    box-shadow var(--transition),
+    border-color var(--transition);
 }
 
 .contactCard:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.15);
-    border-color: #4f46e5;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--color-primary);
 }
 
-.contactIcon {
-    font-size: 2rem;
-    color: #4f46e5;
+.contactIconWrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: var(--color-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  flex-shrink: 0;
 }
 
-.contactLabel {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: #6b7280;
-    text-transform: uppercase;
-    letter-spacing: 0.05rem;
+.contactCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
 }
 
-.contactValue {
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: #1f2937;
+.contactCardLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-light);
 }
 
-.divider {
-    font-size: 0.95rem;
-    color: #6b7280;
-    margin-bottom: 1.5rem;
+.contactCardValue {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+
+.socialsTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-light);
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .socials {
-    display: flex;
-    justify-content: center;
-    gap: 1.25rem;
-    margin-bottom: 4rem;
+  display: flex;
+  gap: 0.75rem;
 }
 
 .socialLink {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    text-decoration: none;
-    background-color: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    padding: 0.6rem 1.25rem;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #1f2937;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.1rem;
+  background-color: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  transition: transform var(--transition),
+    box-shadow var(--transition),
+    border-color var(--transition),
+    color var(--transition);
 }
 
 .socialLink:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(79, 70, 229, 0.15);
-    border-color: #4f46e5;
-    color: #4f46e5;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
-.socialIcon {
-    font-size: 1.2rem;
+
+.formCard {
+  background-color: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 2.5rem;
 }
+
+.formTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 1.75rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.formLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-mid);
+}
+
+.formInput,
+.formTextarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-white);
+  color: var(--color-text-dark);
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: border-color var(--transition),
+    box-shadow var(--transition);
+  outline: none;
+}
+
+.formInput:focus,
+.formTextarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-glow);
+}
+
+.formTextarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.submitBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 0.9rem 2rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-btn);
+  transition: background-color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+  width: 100%;
+}
+
+.submitBtn:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-btn-hover);
+}
+
 
 .footer {
-    border-top: 1px solid #e6e7eb;
-    padding-top: 2rem;
-    font-size: 0.875rem;
-    color: #9ca3af;
+  text-align: center;
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.875rem;
+  color: var(--color-text-light);
 }
 
-@media (max-width: 768px) {
-    .contactCards {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .socials {
-        flex-direction: column;
-        align-items: center;
-    }
+@media (max-width: 768px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .formCard {
+    padding: 1.5rem;
+  }
 }
