@@ -7,12 +7,6 @@ const Hero = () => {
     <section id="hero" className={styles.hero}>
       <div className={styles.heroContainer}>
 
-        {/* Available Badge */}
-        <div className={styles.badge}>
-          <span className={styles.dot} />
-          Available for Work
-        </div>
-
         {/* Heading */}
         <h1 className={styles.heading}>
           Hi, I'm{' '}
@@ -45,7 +39,7 @@ const Hero = () => {
         {/* Socials */}
         <div className={styles.socials}>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/notgreatpro"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.socialLink}
@@ -54,7 +48,7 @@ const Hero = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="hhttps://www.linkedin.com/in/kyle-arahan-174644380/"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.socialLink}

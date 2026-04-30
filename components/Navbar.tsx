@@ -72,7 +72,7 @@ const Navbar = () => {
               className={styles.cvButton}
             >
               <FiDownload />
-              Download Resume
+              Resume
             </a>
           </div>
         </div>
@@ -113,7 +113,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               <FiDownload />
-              Download Resume
+              Resume
             </a>
           </li>
           <li style={{ marginTop: '0.5rem' }}>
