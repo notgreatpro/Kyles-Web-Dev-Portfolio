@@ -1,0 +1,143 @@
+.projects {
+    padding: 6rem 1.5rem;
+    background-color: #ffffff;
+}
+
+.projectsContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.sectionTitle span {
+    color: #4f46e5;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 3rem;
+
+}
+
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    text-align: left;
+}
+
+
+.projectCard {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2 ease;
+}
+
+.prohectCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(79, 70, 229, 0.15);
+}
+
+.projectImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.projectImagePlaceholder {
+    width: 100%;
+    height: 180px;
+    background-color: #0e07ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.projectContent {
+    padding: 1.5rem
+}
+
+
+.projectTitle {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1f2937;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.techStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.techTag {
+    background-color: #e0e7ff;
+    color: #4f46e5;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem, 0.75rem;
+    border-radius: 999px;
+}
+
+.projectLinks {
+    display: flex;
+    gap: 1rem;
+}
+
+.linkButton {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+
+.linkButton:hover {
+    transform: translateY(-2px)
+}
+
+.primaryLink {
+    background-color: #4f46e5;
+    color: #ffffff;
+}
+
+.primaryLink:hover {
+    background-color: #4338ca;
+}
+
+.secondaryLink {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    border: 1px solid #e5e7eb;
+}
+
+
+.secondaryLink:hover {
+    background-color: #e5e7eb;
+}
+
+
+@media (max-width: 768px) {
+    .projectGrid {
+        grid-template-columns: 1fr;
+    }
+}
