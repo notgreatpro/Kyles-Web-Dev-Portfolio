@@ -1,0 +1,133 @@
+.contact {
+    padding: 6rem 1.5rem
+}
+
+.contactContainer {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.sectionTitle span {
+    color: #4f46e5;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 3rem;
+    line-height: 1.7;
+}
+
+.contactCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.contactCard {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    min-width: 160px;
+    transition: transform 0.2 ease, box-shadow 0.2s ease, border-color 0.2 ease;
+
+}
+
+.contactCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.15);
+    border-color: #4f46e5;
+}
+
+.contactIcon {
+    font-size: 2rem;
+    color: #4f46e5;
+}
+
+.contactLabel {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.contactValue {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.divider {
+    font-size: 0.95rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-bottom: 4rem;
+}
+
+.socialLink {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 0.6rem 1.25rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1f2937;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.socialLink:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(79, 70, 229, 0.15);
+    border-color: #4f46e5;
+    color: #4f46e5;
+}
+
+.socialIcon {
+    font-size: 1.2rem;
+}
+
+.footer {
+    border-top: 1px solid #e6e7eb;
+    padding-top: 2rem;
+    font-size: 0.875rem;
+    color: #9ca3af;
+}
+
+@media (max-width: 768px) {
+    .contactCards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socials {
+        flex-direction: column;
+        align-items: center;
+    }
+}
