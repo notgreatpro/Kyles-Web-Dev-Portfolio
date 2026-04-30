@@ -1,61 +1,95 @@
 import styles from './Hero.module.css'
-import {FaGithub, FaLinkedin} from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FiArrowRight } from 'react-icons/fi'
 
 const Hero = () => {
   return (
     <section id="hero" className={styles.hero}>
       <div className={styles.heroContainer}>
 
-        {/* Greeting */}
-        <p className={styles.greeting}>I'm</p>
+        {/* Available Badge */}
+        <div className={styles.badge}>
+          <span className={styles.dot} />
+          Available for Work
+        </div>
 
-        {/* Main Heading */}
+        {/* Heading */}
         <h1 className={styles.heading}>
+          Hi, I'm{' '}
           <span className={styles.highlight}>Kyle Arahan</span>
         </h1>
 
-        {/* Subheading / Role */}
-        <h2 className={styles.subheading}>
+        {/* Role */}
+        <p className={styles.role}>
           Full Stack Web Developer
-        </h2>
+        </p>
 
-        {/* Short Bio */}
+        {/* Accent */}
+        <div className={styles.accent} />
+
+        {/* Bio */}
         <p className={styles.bio}>
           testing
         </p>
 
-        {/* CTA Buttons */}
+        {/* Buttons */}
         <div className={styles.buttonGroup}>
-          <a href="#projects" className={styles.primaryButton}>
-            View My Projects
+          <a href="#projects" className={styles.primaryBtn}>
+            View My Projects <FiArrowRight />
           </a>
-          <a href="#contact" className={styles.secondaryButton}>
+          <a href="#contact" className={styles.secondaryBtn}>
             Contact Me
           </a>
         </div>
 
-   
-            <div className={styles.socials}>
+        {/* Socials */}
+        <div className={styles.socials}>
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.socialLink}
+            aria-label="GitHub"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://linkedin.com/in/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.socialLink}
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
 
-            <a
-                href="https://github.com/notgreatpro"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.socialLink}
-            >
-                <FaGithub />
-            </a>
+        {/* Stats */}
+        <div className={styles.stats}>
+          <div className={styles.statItem}>
+            <span className={styles.statNumber}>2+</span>
+            <span className={styles.statLabel}>Years Experience</span>
+          </div>
+          <div className={styles.statDivider} />
+          <div className={styles.statItem}>
+            <span className={styles.statNumber}>10+</span>
+            <span className={styles.statLabel}>Technologies & Tools Used</span>
+          </div>
+          <div className={styles.statDivider} />
+          <div className={styles.statItem}>
+            <span className={styles.statNumber}>5+</span>
+            <span className={styles.statLabel}>Projects Built</span>
+          </div>
+        </div>
 
-            <a
-                href="https://linkedin.com/in/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.socialLink}
-            >
-                <FaLinkedin />
-            </a>
-            </div>
       </div>
+
+      {/* Scroll Indicator */}
+      <div className={styles.scrollIndicator}>
+        <span>scroll</span>
+        <span className={styles.scrollArrow}>↓</span>
+      </div>
+
     </section>
   )
 }

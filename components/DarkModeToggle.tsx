@@ -40,7 +40,7 @@ const DarkModeToggle = () => {
         color: 'var(--color-text-mid)',
         fontSize: '0.875rem',
         fontWeight: '600',
-        transition: 'var(--transition)',
+        transition: 'all var(--transition)',
         backgroundColor: 'var(--color-bg-white)',
       }}
     >
