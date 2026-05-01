@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 import styles from './Skills.module.css'
 import { FaReact, FaNodeJs, FaGithub, FaGitAlt, FaFigma, FaFileWord, FaFileExcel } from 'react-icons/fa'
-import { SiJavascript, SiTypescript, SiHtml5, SiCss, SiNextdotjs, SiExpo, SiSupabase, SiPostgresql, SiLucid } from 'react-icons/si'
+import { SiJavascript, SiTypescript, SiHtml5, SiCss, SiNextdotjs, SiExpo, SiSupabase, SiPostgresql, SiLucid, SiRubyonrails } from 'react-icons/si'
 import { VscVscode } from 'react-icons/vsc'
 
 interface Skill {
@@ -33,6 +33,7 @@ const skillsData: SkillGroup[] = [
       { name: 'Node.js', icon: <FaNodeJs color="#339933" /> },
       { name: 'Supabase', icon: <SiSupabase color="#3ecf8e" /> },
       { name: 'PostgreSQL', icon: <SiPostgresql color="#4169e1" /> },
+      {name: 'Ruby on Rails', icon: <SiRubyonrails color="#cc0000" />},
     ],
   },
   {

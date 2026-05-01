@@ -54,10 +54,13 @@ const About = () => {
 
    
           <p className={styles.bio}>
-            test
+            Ever since Computer Science course in High School, I was passionate of creating websites creating into a fully functional and robust applications that everyone freely access. I enjoy prioritize the uses of features to help the user experience of a web page.
           </p>
           <p className={styles.bio}>
-            test
+            Outside of web development, I have couple of past hobbies such as gaming (especially Genshin Impact my favourite anime RPG) and some aviation genre (plane spotting. My favourite plane types are Boeing 747 & Airbus A380s).
+          </p>
+          <p className={styles.bio}>
+           I'm also more interest into the city planning genre to understand the current issues every city around the world with poor city planning infastructure; environment concerns and prioritize on private vehicles over public transportation. I started playing Cities: Skylines, a city-simulation game to build custom cities and it helps me plan traffic and the efficient uses of public transportation.
           </p>
 
          
@@ -76,7 +79,7 @@ const About = () => {
             </div>
             <div className={styles.infoItem}>
               <span className={styles.infoLabel}>Availability</span>
-              <span className={styles.infoValue}>Open to Work</span>
+              <span className={styles.infoValue}>Open to entry-level positions</span>
             </div>
           </div>
 

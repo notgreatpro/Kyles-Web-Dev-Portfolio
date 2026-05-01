@@ -12,13 +12,22 @@ interface Education {
 
 const educationData: Education[] = [
   {
+    school: 'ACE Project Space | RRC Polytech',
+    degree: 'Full Stack Web Developer | Co-op position',
+    startDate: 'Jan 5, 2026',
+    endDate: 'May 1, 2026',
+    current: false,
+    description:
+      'Integrated a mobile application for a external client on the colleges project space with a professional team setting. The app is built using React Native, Typescript, CSS, Supabase with PostgreSQL and tools such as Expo and Expo Go. Heavily focused on team collaboration and attention to detail while working with client communication.',
+  },
+  {
     school: 'RRC Polytech',
     degree: 'Full Stack Web Development',
-    startDate: 'Jan 2025',
-    endDate: 'Apr 2026',
-    current: true,
+    startDate: 'Jan 5, 2025',
+    endDate: 'May 1, 2026',
+    current: false,
     description:
-      'Add your description here — for example: Studied full stack web development covering front-end and back-end technologies. Worked on real-world projects using React, Next.js, Node.js, and Supabase. Gained hands-on experience building web and mobile applications.',
+      'Gain hands-on experience with strong front-end applications (UI/UX) and database management systems with problem solving & attention to detail. ',
   },
 ]
 
@@ -35,7 +44,7 @@ const Education = () => {
           </h2>
           <div className={styles.accent} />
           <p className={styles.subtitle}>
-            My academic journey and qualifications
+            My post-secondary education insitutions & work experiences.
           </p>
         </div>
 

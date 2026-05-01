@@ -1,6 +1,9 @@
+'use client'
+
 import styles from './Hero.module.css'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { FiArrowRight } from 'react-icons/fi'
+import { TypeAnimation } from 'react-type-animation'
 
 const Hero = () => {
   return (
@@ -14,9 +17,27 @@ const Hero = () => {
         </h1>
 
         {/* Role */}
-        <p className={styles.role}>
-          Full Stack Web Developer
-        </p>
+       <p className={styles.role}>
+        <TypeAnimation
+          sequence={[
+            'Full Stack Web Developer',
+            5000,
+            'Mobile App Developer',
+            5000,
+            'Front-End Developer',
+            5000,
+            'Back-End Developer',
+            5000,
+            'Software Developer',
+            5000,
+          ]}
+          wrapper="span"
+          speed={20}
+          deletionSpeed={20}
+          repeat={Infinity}
+          cursor={true}
+        />
+      </p>
 
         {/* Accent */}
         <div className={styles.accent} />

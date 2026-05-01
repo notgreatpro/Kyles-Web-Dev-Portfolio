@@ -30,7 +30,7 @@ const Contact = () => {
     <section id="contact" className={styles.contact}>
       <div className={styles.contactContainer}>
 
-        {/* Header */}
+       
         <div className={styles.header}>
           <span className={styles.label}>Get In Touch</span>
           <h2 className={styles.title}>
@@ -43,10 +43,10 @@ const Contact = () => {
           </p>
         </div>
 
-        {/* Grid */}
+    
         <div className={styles.contactGrid}>
 
-          {/* Left — Info */}
+          
           <div className={styles.contactInfo}>
             <div>
               <h3 className={styles.infoTitle}>Let's build business</h3>
@@ -81,7 +81,7 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Socials */}
+            
             <div>
               <p className={styles.socialsTitle}>Find me on</p>
               <div className={styles.socials}>
@@ -108,7 +108,8 @@ const Contact = () => {
         
           <div className={styles.formCard}>
             <h3 className={styles.formTitle}>Start the conversation with me!</h3>
-            <form className={styles.form} onSubmit={handleSubmit}>
+            <form className={styles.form} onSubmit={handleSubmit} autoComplete="off">
+
 
            
               <div className={styles.formRow}>

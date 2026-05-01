@@ -14,7 +14,7 @@ const projectsData: Project[] = [
   {
     title: 'Hayden Planetarium Mockup',
     description:
-      'A mockup website from a 2011 NASA website replicating the Planetarium to replicate every details that exist on the NASA website.',
+      'A mockup website design to understand how HTML and CSS used in a professional site back in 2011 by replicating exact functionalities. ',
     tech: ['HTML5', 'CSS3', 'VS Code'],
     github: '',
     image: '/project-images/Hayden-Mockup.png',
@@ -23,7 +23,7 @@ const projectsData: Project[] = [
   {
     title: 'GreatPros BookStore',
     description:
-      'A simple BookStore website to display a home page with a navigation bar, a shop full of books and a contact page. Fully built with HTML, CSS and Javascript.',
+      'A bookstore to implement responsive layouts, JavaScript features and functional contact page for questions or inquiries.',
     tech: ['HTML5', 'CSS3', 'JavaScript', 'VS Code'],
     github: 'https://github.com/notgreatpro/Web-Dev_Final_Project-GreatPro-s-BookStore',
     image: '/project-images/GreatProBookStore.png',
@@ -32,12 +32,31 @@ const projectsData: Project[] = [
   {
     title: 'Teyvat Archives',
     description:
-      'A simple BookStore website to display a home page with a navigation bar, a shop full of books and a contact page. Fully built with HTML, CSS and Javascript.',
-    tech: ['HTML5', 'CSS3', 'JavaScript', 'VS Code'],
-    github: 'https://github.com/notgreatpro/Web-Dev_Final_Project-GreatPro-s-BookStore',
+      'A Genshin Impact website designed for Genshin fans to browse Genshin characters including their in-game stats such as Voice Overs and Affiliations.',
+    tech: ['Ruby on Rails', 'CSS3', 'CSV', 'API', 'VS Code'],
+    github: 'https://github.com/notgreatpro/teyvat_archives',
     image: '/project-images/TeyvatArchives.png',
     featured: false,
-  }
+  },
+  {
+    title: 'Yae Publishing House',
+    description:
+      'Another professional bookstore based on Genshin Impact Inazumas popular bookstore after the same name, designed for users to browse books with a functional payment system and a seperate admin system.',
+    tech: ['Ruby on Rails', 'CSS3', 'JavaScript', 'Stripe', 'VS Code'],
+    github: 'https://github.com/notgreatpro/yae_publishing_house',
+    image: '/project-images/YaePublishingHouse.png',
+    featured: true,
+  },
+   {
+    title: 'Portfolio Website',
+    description:
+      'This responsive & professional portfolio fully designed to present my projects & work experiences; get to know my background and seeking hire from employers.',
+    tech: ['React', 'CSS3', 'TypeScript', 'Next.js', 'Versel', 'VS Code'],
+    github: 'https://github.com/notgreatpro/Kyles-Web-Dev-Portfolio',
+    image: '/project-images/Portfolio.png',
+    featured: false,
+  },
+  
 ]
 
 const Projects = () => {
@@ -53,11 +72,10 @@ const Projects = () => {
           </h2>
           <div className={styles.accent} />
           <p className={styles.subtitle}>
-            A selection of projects I've built
+            A section where I built front-end and back-end application systems.
           </p>
         </div>
 
-        {/* Projects Grid */}
         <div className={styles.projectsGrid}>
           {projectsData.map((project: Project) => (
             <div key={project.title} className={styles.projectCard}>
@@ -70,12 +88,11 @@ const Projects = () => {
                 <div className={styles.projectImageOverlay} />
                 {project.featured && (
                     <span className={styles.featuredBadge}>
-                    ⭐ Featured
+                    Featured Project
                     </span>
                 )}
                 </div>
 
-                {/* Content */}
                 <div className={styles.projectContent}>
                 <h3 className={styles.projectTitle}>
                     {project.title}
