@@ -44,7 +44,7 @@ const Hero = () => {
 
         {/* Bio */}
         <p className={styles.bio}>
-          testing
+          A Full Stack Web Developer mainly focusing on building responsive websites, front-end/back-end applications and mobile-based applications. I enjoy turning simple websites into a robust deployed application with in-hands user experience.
         </p>
 
         {/* Buttons */}
@@ -69,7 +69,7 @@ const Hero = () => {
             <FaGithub />
           </a>
           <a
-            href="hhttps://www.linkedin.com/in/kyle-arahan-174644380/"
+            href="https://www.linkedin.com/in/kyle-arahan-174644380/"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.socialLink}

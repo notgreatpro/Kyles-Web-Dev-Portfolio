@@ -94,7 +94,7 @@ const Contact = () => {
                   <FaGithub /> GitHub
                 </a>
                 <a
-                  href="hhttps://www.linkedin.com/in/kyle-arahan-174644380/"
+                  href="https://www.linkedin.com/in/kyle-arahan-174644380/"
                   target="_blank"
                   rel="LinkedIn"
                   className={styles.socialLink}
@@ -158,7 +158,7 @@ const Contact = () => {
                 <label className={styles.formLabel}>Message</label>
                 <textarea
                   name="message"
-                  placeholder="Tell me more..."
+                  placeholder="Your Message"
                   className={styles.formTextarea}
                   value={formData.message}
                   onChange={handleChange}

@@ -51,7 +51,7 @@ const projectsData: Project[] = [
     title: 'Portfolio Website',
     description:
       'This responsive & professional portfolio fully designed to present my projects & work experiences; get to know my background and seeking hire from employers.',
-    tech: ['React', 'CSS3', 'TypeScript', 'Next.js', 'Versel', 'VS Code'],
+    tech: ['React', 'CSS3', 'TypeScript', 'Next.js', 'Vercel', 'VS Code'],
     github: 'https://github.com/notgreatpro/Kyles-Web-Dev-Portfolio',
     image: '/project-images/Portfolio.png',
     featured: false,

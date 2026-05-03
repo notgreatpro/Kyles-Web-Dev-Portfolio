@@ -16,7 +16,7 @@ interface SkillGroup {
 
 const skillsData: SkillGroup[] = [
   {
-    category: 'Front-End Languages',
+    category: 'Front-End & Framework Languages',
     skills: [
       { name: 'HTML', icon: <SiHtml5 color="#e34f26" /> },
       { name: 'CSS', icon: <SiCss color="#1572b6" /> },
@@ -28,7 +28,7 @@ const skillsData: SkillGroup[] = [
     ],
   },
   {
-    category: 'Back-end',
+    category: 'Back-End Languages',
     skills: [
       { name: 'Node.js', icon: <FaNodeJs color="#339933" /> },
       { name: 'Supabase', icon: <SiSupabase color="#3ecf8e" /> },
@@ -64,7 +64,7 @@ const Skills = () => {
           </h2>
           <div className={styles.accent} />
           <p className={styles.subtitle}>
-            Technologies & Tools I used to build mobile applications and front-end/backend web applications
+            Technologies & Tools I used to build mobile applications and front-end/backend web applications.
           </p>
         </div>
 
