@@ -28,7 +28,7 @@ const projectsData: Project[] = [
     tech: ['HTML5', 'CSS3', 'JavaScript', 'VS Code'],
     github: 'https://github.com/notgreatpro/Web-Dev_Final_Project-GreatPro-s-BookStore',
     image: '/project-images/GreatProBookStore.png',
-    live: "https://greatpros-book-store.vercel.app/contact.html",
+    live: "https://greatpros-book-store.vercel.app/index.html",
     featured: false,
   },
   {
