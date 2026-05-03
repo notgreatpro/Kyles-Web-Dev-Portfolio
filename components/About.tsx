@@ -1,5 +1,6 @@
 import styles from './About.module.css'
 import { FiDownload, FiMail, FiUser } from 'react-icons/fi'
+import CodeTerminal from './CodeTerminal'
 
 const About = () => {
   return (
@@ -8,25 +9,7 @@ const About = () => {
 
 
         <div className={styles.imageWrapper}>
-
-          {/* 
-            When you have a real photo:
-            Replace the div below with:
-            <img
-              src="/kyle-profile.jpg"
-              alt="Kyle Arahan"
-              className={styles.profileImage}
-            />
-          */}
-          <div className={styles.imagePlaceholder}>
-            <div className={styles.placeholderIcon}>
-              <FiUser />
-            </div>
-            <span className={styles.placeholderText}>
-              Your Photo Here
-            </span>
-          </div>
-
+          <CodeTerminal />
 
           <div className={styles.expBadge}>
             <strong>2+</strong>

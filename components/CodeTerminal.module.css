@@ -1,0 +1,139 @@
+.terminal {
+    width: 100%;
+    max-width: 560px;
+    background-color: #1e1e2e;
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    border: 1px solid #313244;
+    position: relative;
+    z-index: 1;
+    font-family: 'Fira Code', 'Cascadia Code', 'Courier New', monospace;
+}
+
+.terminalHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.875rem 1.25rem;
+    background-color: #181825;
+    border-bottom: 1px solid #313244;
+}
+
+.terminalDots {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.dotRed,
+.dotYellow,
+.dotGreen {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+
+.dotRed {
+    background-color: #f38ba8;
+
+}
+
+.dotYellow {
+    background-color: #f9e2af;
+
+}
+
+.dotGreen {
+    background-color: #a6e3a1;
+}
+
+.terminalTitle {
+    font-size: 0.8rem;
+    color: #6c7086;
+    font-weight: 500;
+    margin: 0 auto;
+}
+
+.terminalBody {
+    padding: 1.25rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-height: 460px;
+    overflow-x: hidden;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(4px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.lineNumber {
+    color: #45475a;
+    font-size: 0.75rem;
+    min-width: 20px;
+    text-align: right;
+    user-select: none;
+}
+
+.keyword {
+    color: #cba6f7;
+    font-weight: 600;
+}
+
+.property {
+    color: #89dceb;
+}
+
+.bracket {
+    color: #fab387;
+}
+
+.import {
+  color: #cba6f7;
+  font-weight: 600;
+}
+
+.export {
+  color: #cba6f7;
+  font-weight: 600;
+}
+
+.comment {
+    color: #6c7086;
+    font-style: italic;
+}
+
+.default {
+    color: #cdd6f4;
+}
+
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1rem;
+    background-color: #cba6f7;
+    margin-left: 2px;
+    animation: blink 1s infinite;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity:0;}
+}

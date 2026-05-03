@@ -6,14 +6,16 @@ import CursorGlow from '@/components/CursorGlow'
 export const metadata: Metadata = {
   title: 'Kyle Arahans Portfolio',
   description:
-    'My Portfolio — Full Stack Web Developer based in Winnipeg, Canada. Specializing in React, Next.js, React Native, Node.js and Supabase.',
+    'A portfolio showcasing my projects and get to learn about myself and the hands-on experience I learned as a developer.',
   keywords: [
     'Kyle Arahan',
     'Full Stack Developer',
-    'React Developer',
+    'Software Developer',
+    'Mobile Developer',
+    'React',
+    'PostgreSQL',
     'Next.js',
     'Winnipeg Developer',
-    'Web Developer Portfolio',
   ],
   authors: [{ name: 'Kyle Arahan' }],
   openGraph: {
