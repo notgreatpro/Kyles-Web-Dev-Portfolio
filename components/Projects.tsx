@@ -1,13 +1,15 @@
 import styles from './Projects.module.css'
 import { FaGithub } from 'react-icons/fa'
+import { FiExternalLink } from 'react-icons/fi'
 
 interface Project {
   title: string
   description: string
   tech: string[]
-  github: string
+  github?: string
   image?: string
   featured?: boolean
+  live?: string
 }
 
 const projectsData: Project[] = [
@@ -16,7 +18,6 @@ const projectsData: Project[] = [
     description:
       'A mockup website design to understand how HTML and CSS used in a professional site back in 2011 by replicating exact functionalities. ',
     tech: ['HTML5', 'CSS3', 'VS Code'],
-    github: '',
     image: '/project-images/Hayden-Mockup.png',
     featured: false,
   },
@@ -27,6 +28,7 @@ const projectsData: Project[] = [
     tech: ['HTML5', 'CSS3', 'JavaScript', 'VS Code'],
     github: 'https://github.com/notgreatpro/Web-Dev_Final_Project-GreatPro-s-BookStore',
     image: '/project-images/GreatProBookStore.png',
+    live: "https://greatpros-book-store.vercel.app/contact.html",
     featured: false,
   },
   {
@@ -54,6 +56,7 @@ const projectsData: Project[] = [
     tech: ['React', 'CSS3', 'TypeScript', 'Next.js', 'Vercel', 'VS Code'],
     github: 'https://github.com/notgreatpro/Kyles-Web-Dev-Portfolio',
     image: '/project-images/Portfolio.png',
+    live: "https://kylearahan.vercel.app/",
     featured: false,
   },
   
@@ -64,7 +67,7 @@ const Projects = () => {
     <section id="projects" className={styles.projects}>
       <div className={styles.projectsContainer}>
 
-        {/* Header */}
+     
         <div className={styles.header}>
           <span className={styles.label}>My Work</span>
           <h2 className={styles.title}>
@@ -101,7 +104,7 @@ const Projects = () => {
                     {project.description}
                 </p>
 
-                {/* Tech Tags */}
+            
                 <div className={styles.techStack}>
                     {project.tech.map((tech) => (
                     <span key={tech} className={styles.techTag}>
@@ -117,6 +120,15 @@ const Projects = () => {
                         className={`${styles.linkBtn} ${styles.primaryLink}`}
                     >
                     <FaGithub /> Source Code
+                    </a>
+
+                    <a
+                       href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`${styles.linkBtn} ${styles.primaryLink}`}
+                    >
+                      <FiExternalLink /> Live Demo
                     </a>
                 </div>
                 </div>
