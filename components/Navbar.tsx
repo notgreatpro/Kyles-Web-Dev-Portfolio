@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { FiDownload, FiMenu, FiX } from 'react-icons/fi'
+import { FiDownload} from 'react-icons/fi'
 import DarkModeToggle from './DarkModeToggle'
 import styles from './Navbar.module.css'
 
@@ -55,7 +55,6 @@ const Navbar = () => {
           Kyle Arahan<span>.</span>
         </a>
 
-        {/* Desktop Right Side */}
         <div className={styles.navRight}>
           <ul className={styles.navLinks}>
             {navItems.map((item) => {
@@ -83,13 +82,25 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Button */}
         <button
-          className={styles.menuButton}
+          className={`${styles.hamburger} ${isOpen ? styles.open : ''}`}
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
-          {isOpen ? <FiX /> : <FiMenu />}
+          {isOpen ? (
+            <span style={{
+              fontSize: '1.25rem',
+              color: 'var(--color-text-dark)',
+              lineHeight: 1,
+              fontWeight: 300
+            }}>✕</span>
+          ) : (
+            <>
+              <span className={styles.hamburgerLine} />
+              <span className={styles.hamburgerLine} />
+              <span className={styles.hamburgerLine} />
+            </>
+          )}
         </button>
 
       </div>
