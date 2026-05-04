@@ -44,7 +44,7 @@ const projectsData: Project[] = [
     title: 'Yae Publishing House',
     description:
       'Another professional bookstore based on Genshin Impact Inazumas popular bookstore after the same name, designed for users to browse books with a functional payment system and a seperate admin system.',
-    tech: ['Ruby on Rails', 'CSS3', 'JavaScript', 'Stripe', 'VS Code'],
+    tech: ['Ruby on Rails', 'CSS3', 'JavaScript', 'Stripe', 'API', 'VS Code'],
     github: 'https://github.com/notgreatpro/yae_publishing_house',
     image: '/project-images/YaePublishingHouse.png',
     featured: true,
