@@ -72,8 +72,8 @@ const Navbar = () => {
           <div className={styles.navActions}>
             <DarkModeToggle />
             <a
-              href="/Kyle-Arahan-Resume.pdf"
-              download="Kyle-Arahan-Resume.pdf"
+              href="/resume/Kyle Arahan Resume - Full Stack.pdf"
+              download="Kyle Arahan Resume - Full Stack.pdf"
               className={styles.cvButton}
             >
               <FiDownload />
@@ -124,8 +124,8 @@ const Navbar = () => {
           })}
           <li>
             <a
-              href="/Kyle-Arahan-Resume.pdf"
-              download="Kyle-Arahan-Resume.pdf"
+              href="/resume/Kyle Arahan Resume - Full Stack.pdf"
+              download="Kyle Arahan Resume - Full Stack.pdf"
               className={styles.mobileCv}
               onClick={() => setIsOpen(false)}
             >
