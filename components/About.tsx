@@ -69,8 +69,8 @@ const About = () => {
           {/* Buttons */}
           <div className={styles.actions}>
             <a
-              href="/resume/Kyle Arahan Resume - Full Stack.pdf"
-              download="Kyle Arahan Resume - Full Stack.pdf"
+              href="/resume/Kyle Arahan Resume - Full Stack Web Development.pdf"
+              download="Kyle Arahan Resume - Full Stack Web Development.pdf"
               className={styles.primaryBtn}
             >
               <FiDownload /> Download CV
